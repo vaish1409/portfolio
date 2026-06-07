@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VAISHNAVI SINGH | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">YN<span class="dot">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#interests">Interests</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">Hire Me</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="home">
+    <div class="hero-bg-text">PORTFOLIO</div>
+    <div class="hero-content">
+      <div class="hero-left">
+        <p class="hero-eyebrow">Hello, I'm</p>
+        <h1 class="hero-name">VAISHNAVI<br /><span class="accent">SINGH</span><span class="dot">.</span></h1>
+        <p class="hero-tagline">Computer Science Engineer &amp; <br/>Passionate technologist with a strong foundation in object-oriented design and distributed systems. I thrive at the intersection of rigorous engineering principles and creative problem-solving. By leveraging a modern tech stack—including Java, Spring Boot, MySQL, and React.js—I transform abstract concepts into high-impact digital products. I am committed to continuous improvement, staying at the forefront of emerging software development practices, and contributing to collaborative environments where quality, efficiency, and scalability are the primary drivers of success</p>
+        <p class="hero-desc">
+          A passionate developer from Karnataka, India, building meaningful digital experiences
+          with clean code and creative thinking.
+        </p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn-primary">View My Work</a>
+          <a href="assets/resume.pdf" download class="btn-outline">Download CV</a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/yourusername" target="_blank" class="social-link" aria-label="GitHub">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/yourusername" target="_blank" class="social-link" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="mailto:your@email.com" class="social-link" aria-label="Email">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="profile-frame">
+          <div class="profile-img-wrapper">
+            <!-- Replace 'assets/photo.jpg' with your actual photo filename -->
+            <img src="assets/photo.jpg" alt="Your Name" class="profile-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"/>
+            <div class="profile-placeholder" style="display:none">
+              <span>Add Your<br/>Photo Here</span>
+            </div>
+          </div>
+          <div class="profile-badge">
+            <span class="badge-icon">🎓</span>
+            <div>
+              <p class="badge-label">Available for</p>
+              <p class="badge-value">Internship / Job</p>
+            </div>
+          </div>
+          <div class="profile-tag tag-1">React</div>
+          <div class="profile-tag tag-2">Python</div>
+          <div class="profile-tag tag-3">UI/UX</div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">01</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="about-lead">
+            I'm a 4th semester Computer Science Engineering student at Nitte meenakshi Institute of Technology, 
+            yelahanka, Karnataka, passionate about building software that solves real-world problems.
+          </p>
+          <p>
+            My passion for technology was ignited in the 9th grade during a national robotics competition, 
+            where my team’s innovative approach earned us the 'Best Theme' award. That experience revealed 
+            the profound intersection of logical problem-solving and creative design—a realization that 
+            ultimately steered me toward software engineering. Today, I channel that same curiosity into 
+            building robust, scalable applications. 
+          </p>
+          <p>
+            I thrive at the junction of architecture and user experience, 
+            where I can write clean, efficient code that not only functions
+            perfectly but feels intuitiveto the people using it.
+          </p>
+          <div class="about-details">
+            <div class="detail-item">
+              <span class="detail-label">name</span>
+              <span class="detail-value">Vaishnavi Singh</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Degree</span>
+              <span class="detail-value">B.E. Computer Science</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Year</span>
+              <span class="detail-value">2nd Year (4th Sem)</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Location</span>
+              <span class="detail-value">yelahanka, Karnataka</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Email</span>
+              <span class="detail-value">vaishnavisinghh1409@gmail.com</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">CGPA</span>
+              <span class="detail-value">8.50 / 10</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-num">5+</span>
+            <span class="stat-label">Projects Completed</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">5+</span>
+            <span class="stat-label">Technologies Learned</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">3+</span>
+            <span class="stat-label">Hackathons Attended</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">2</span>
+            <span class="stat-label">Years of Coding</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">02</span>
+        <h2 class="section-title">Skills &amp; Technologies</h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-category">
+          <h3 class="skill-cat-title">💻 Programming Languages</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">C</span>
+            <span class="skill-tag">C++</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-cat-title">🌐 Web Development</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">React.js</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Express.js</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-cat-title">🗄️ Database</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">Firebase</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-cat-title">🛠️ Tools &amp; Platforms</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">Figma</span>
+            <span class="skill-tag">Linux</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-cat-title">📚 Core Subjects</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Data Structures</span>
+            <span class="skill-tag">Algorithms</span>
+            <span class="skill-tag">DBMS</span>
+            <span class="skill-tag">OS</span>
+            <span class="skill-tag">Software Engineering</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-cat-title">🤝 Soft Skills</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Problem Solving</span>
+            <span class="skill-tag">Teamwork</span>
+            <span class="skill-tag">Communication</span>
+            <span class="skill-tag">Leadership</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Proficiency bars -->
+      <div class="proficiency">
+        <h3 class="prof-title">Proficiency</h3>
+        <div class="prof-list">
+          <div class="prof-item">
+            <div class="prof-header"><span>Python</span><span>85%</span></div>
+            <div class="prof-bar"><div class="prof-fill" style="--w:85%"></div></div>
+          </div>
+          <div class="prof-item">
+            <div class="prof-header"><span>HTML &amp; CSS</span><span>90%</span></div>
+            <div class="prof-bar"><div class="prof-fill" style="--w:90%"></div></div>
+          </div>
+          <div class="prof-item">
+            <div class="prof-header"><span>JavaScript</span><span>75%</span></div>
+            <div class="prof-bar"><div class="prof-fill" style="--w:75%"></div></div>
+          </div>
+          <div class="prof-item">
+            <div class="prof-header"><span>Java</span><span>70%</span></div>
+            <div class="prof-bar"><div class="prof-fill" style="--w:70%"></div></div>
+          </div>
+          <div class="prof-item">
+            <div class="prof-header"><span>MySQL</span><span>80%</span></div>
+            <div class="prof-bar"><div class="prof-fill" style="--w:80%"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">03</span>
+        <h2 class="section-title">Projects</h2>
+      </div>
+      <div class="projects-grid">
+
+        <!-- PROJECT CARD 1 -->
+        <article class="project-card featured">
+          <div class="project-card-top">
+            <span class="project-num">01</span>
+            <div class="project-links">
+              <a href="https://github.com/yourusername/project1" target="_blank" class="icon-link" aria-label="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+              <a href="https://your-project-demo.com" target="_blank" class="icon-link" aria-label="Live Demo">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-icon">🛒</div>
+          <h3 class="project-title">Online Attendance Monitoring System</h3>
+          <p class="project-desc">
+            A web-based application for faculty to mark student attendance and auto-generate
+            reports. Students get notified when attendance falls below 75%. Built as part of 
+            the Software Engineering course.
+          </p>
+          <div class="project-tech">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>MySQL</span>
+          </div>
+        </article>
+
+        <!-- PROJECT CARD 2 -->
+        <article class="project-card">
+          <div class="project-card-top">
+            <span class="project-num">02</span>
+            <div class="project-links">
+              <a href="#" target="_blank" class="icon-link" aria-label="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-icon">🔐</div>
+          <h3 class="project-title">Student Result Management System</h3>
+          <p class="project-desc">
+            A desktop application built with Python and MySQL for managing and retrieving
+            student results, supporting role-based access for faculty and students.
+          </p>
+          <div class="project-tech">
+            <span>Python</span><span>Tkinter</span><span>MySQL</span>
+          </div>
+        </article>
+
+        <!-- PROJECT CARD 3 -->
+        <article class="project-card">
+          <div class="project-card-top">
+            <span class="project-num">03</span>
+            <div class="project-links">
+              <a href="#" target="_blank" class="icon-link" aria-label="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-icon">🌦️</div>
+          <h3 class="project-title">Weather Dashboard App</h3>
+          <p class="project-desc">
+            A real-time weather application using the OpenWeatherMap API showing current
+            conditions, 5-day forecast, and location-based weather detection.
+          </p>
+          <div class="project-tech">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>REST API</span>
+          </div>
+        </article>
+
+        <!-- Add more project cards above this line (just copy one of the cards above) -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== INTERESTS ========== -->
+  <section class="section interests" id="interests">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">04</span>
+        <h2 class="section-title">Areas of Interest</h2>
+      </div>
+      <div class="interests-grid">
+        <div class="interest-card">
+          <div class="interest-icon">🌐</div>
+          <h3>Web Development</h3>
+          <p>Building responsive, accessible, and performant web applications with modern frameworks and clean architecture.</p>
+        </div>
+        <div class="interest-card">
+          <div class="interest-icon">🤖</div>
+          <h3>Artificial Intelligence</h3>
+          <p>Exploring machine learning algorithms, neural networks, and how AI can solve real-world problems more intelligently.</p>
+        </div>
+        <div class="interest-card">
+          <div class="interest-icon">🔒</div>
+          <h3>Cybersecurity</h3>
+          <p>Understanding vulnerabilities, ethical hacking practices, and building systems that are secure by design.</p>
+        </div>
+        <div class="interest-card">
+          <div class="interest-icon">📱</div>
+          <h3>Mobile Development</h3>
+          <p>Creating cross-platform mobile apps that deliver native-quality experiences to Android and iOS users.</p>
+        </div>
+        <div class="interest-card">
+          <div class="interest-icon">☁️</div>
+          <h3>Cloud Computing</h3>
+          <p>Learning AWS, Azure and how cloud infrastructure powers scalable modern applications.</p>
+        </div>
+        <div class="interest-card">
+          <div class="interest-icon">📊</div>
+          <h3>Data Science</h3>
+          <p>Turning raw data into insights through visualization, statistics, and predictive modelling.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EDUCATION & EXPERIENCE ========== -->
+  <section class="section timeline" id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">05</span>
+        <h2 class="section-title">Education &amp; Experience</h2>
+      </div>
+      <div class="timeline-wrapper">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2023 – Present</span>
+            <h3>B.E. Computer Science Engineering</h3>
+            <p class="timeline-org">Nitte meenakshi Institute of Technology, Yelahanka, Karnataka</p>
+            <p>Currently in 4th Semester. Relevant coursework: Software Engineering, DBMS, Data Structures, Algorithms, Operating Systems.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2021 – 2023</span>
+            <h3>Army public School PCMC</h3>
+            <p class="timeline-org">Army public School, Karnataka</p>
+            <p>Completed  12th with 85% marks. Science stream with Computer Science.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">Summer 2024</span>
+            <h3>Web Development Intern (if applicable)</h3>
+            <p class="timeline-org">Company Name / Organization</p>
+            <p>Brief description of what you worked on. Remove this block if you haven't done an internship yet — or replace with a "Volunteer" or "Club" experience.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CERTIFICATIONS ========== -->
+  <section class="section certs" id="certs">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">06</span>
+        <h2 class="section-title">Certifications</h2>
+      </div>
+      <div class="certs-grid">
+        <div class="cert-card">
+          <div class="cert-logo">🏅</div>
+          <div class="cert-info">
+            <h3>Python for Everybody</h3>
+            <p>Coursera / University of Michigan</p>
+            <span class="cert-year">2024</span>
+          </div>
+        </div>
+        <div class="cert-card">
+          <div class="cert-logo">🏅</div>
+          <div class="cert-info">
+            <h3>MongoDB Certification</h3>
+            <p>aws</p>
+            <span class="cert-year">2024</span>
+          </div>
+        </div>
+        <div class="cert-card">
+          <div class="cert-logo">🏅</div>
+          <div class="cert-info">
+            <h3>Java certification</h3>
+            <p>Infosys SpringBoard</p>
+            <span class="cert-year">2025</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">07</span>
+        <h2 class="section-title">Get In Touch</h2>
+      </div>
+      <div class="contact-wrapper">
+        <div class="contact-left">
+          <p class="contact-intro">
+            I'm actively looking for internship and full-time opportunities. Whether you have 
+            a question, a project idea, or just want to say hello — my inbox is always open!
+          </p>
+          <div class="contact-details">
+            <a href="mailto:vaishnavisinghh1409@gmail.com" class="contact-item">
+              <div class="contact-icon">📧</div>
+              <div>
+                <p class="contact-label">Email</p>
+                <p class="contact-val">vaishnavisinghh1409@gmail.com</p>
+              </div>
+            </a>
+            <a href="https://linkedin.com/in/vaishnavi-singh-4692" target="_blank" class="contact-item">
+              <div class="contact-icon">💼</div>
+              <div>
+                <p class="contact-label">LinkedIn</p>
+                <p class="contact-val">linkedin.com/in/vaishnavi-singh-4692</p>
+              </div>
+            </a>
+            <a href="https://github.com/vaish1409" target="_blank" class="contact-item">
+              <div class="contact-icon">🐙</div>
+              <div>
+                <p class="contact-label">GitHub</p>
+                <p class="contact-val">github.com/vaish1409</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="Priya Sharma" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="priya@company.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="I'd like to discuss an opportunity..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary full-width">Send Message ✉️</button>
+          <p class="form-note">* The form opens your email client. For direct contact, email me directly.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <p>Designed &amp; Built by <strong>Your Name</strong> · 2025</p>
+      <p class="footer-sub">Made with ❤️ in Karnataka, India</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
